@@ -5,7 +5,8 @@ import pandas as pd
 from sklearn.preprocessing import StandardScaler
 
 
-app = Flask(__name__)
+application = Flask(__name__)
+app=application
 standard_scaler=pickle.load(open('models/scaler.pkl','rb'))
 lasso_model=pickle.load(open('models/lasso.pkl','rb'))
 
